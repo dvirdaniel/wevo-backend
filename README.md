@@ -7,7 +7,9 @@ The following assumptions made in the development process:
 2. Created Suggestions controller and service to save distinct last 5 successfull searches (the response from Medium website is not empty) in a Queue
 3. Created tests for all controllers and services
 4. Did NOT convert XML to JSON (to object) so the processing of the XML will be in the client (found Flutter web_feed library very useful)
-5. Decide not to convert XML to model because I wanted to practice Flutter, maybe this causes a slight performance issue and not clear API data returned but for the purpose of this exercise I found it more useful to parse XML on the client (so just return the response coming from Medium website) 
+5. Decide not to convert XML to model because I wanted to practice Flutter and I didn't need any information to save on the server regarding it, e.g: save to DB
+Maybe this causes a slight performance issue and not clear API data returned but for the purpose of this exercise I found it more useful to parse XML on the client (so just return the response coming from Medium website)
+6. I didn't use any cache regading the feed (also not for the suggestion's feed) cause articales maybe be added. It is possible to add cache and add a scheduler to update it when necessary)
 
 ## Requirements
 
